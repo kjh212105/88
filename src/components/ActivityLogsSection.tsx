@@ -46,7 +46,7 @@ export default function ActivityLogsSection({
     onAddLog({
       title,
       date,
-      description: '',
+      description,
       writer,
       participants: [],
       imageTheme,
@@ -212,6 +212,18 @@ export default function ActivityLogsSection({
                 />
               </div>
 
+              <div>
+                <label className="block text-xs font-bold text-slate-500 mb-1.5">훈련 상세 내용</label>
+                <textarea
+                  id="form-log-description"
+                  placeholder="훈련 세션 및 디그, 연계 등 진행 상황에 대해 기재해 주세요."
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                  rows={3}
+                  className="w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 outline-none transition-all resize-none font-sans"
+                />
+              </div>
+
               <div className="grid grid-cols-2 gap-3.5">
                 <div>
                   <label className="block text-xs font-bold text-slate-500 mb-1.5">훈련/기록 날짜</label>
@@ -332,9 +344,18 @@ export default function ActivityLogsSection({
                       </div>
 
                       {/* Main Volleyball Log Title */}
-                      <h4 className="text-base font-bold text-slate-900 group-hover:text-indigo-600 transition-colors leading-snug">
-                        {log.title}
-                      </h4>
+                      {log.title && (
+                        <h4 className="text-base font-bold text-slate-900 group-hover:text-indigo-600 transition-colors leading-snug">
+                          {log.title}
+                        </h4>
+                      )}
+
+                      {/* Log Description / Content */}
+                      {log.description && (
+                        <p className="text-xs text-slate-500 font-medium leading-relaxed mt-2.5 bg-slate-50 border border-slate-100 p-3 rounded-xl whitespace-pre-wrap">
+                          {log.description}
+                        </p>
+                      )}
                     </div>
 
                   </div>

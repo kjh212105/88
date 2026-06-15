@@ -43,9 +43,9 @@ export const initialActivityLogs: ActivityLog[] = [
   {
     id: 'l1',
     clubId: 'c1',
-    title: '화요 정기훈련 - 언더핸드/오버핸드 리시브 및 고강도 체력 세션',
+    title: '',
     date: '2026-06-09',
-    description: '리시브 실패 시 공격 전개가 차단되는 점을 보강하기 위해 자세 고정 훈련을 심화 진행했습니다. 속공 연동을 위한 메인 세터 남윤호의 토스 낙하지점 선정 피드백이 우수했습니다.',
+    description: '여자부 6인제 포지션 훈련 및 전교대 준비',
     participants: ['김태린', '남윤호', '이준우', '한소희'],
     writer: '김태린',
     imageTheme: 'indigo',
@@ -54,9 +54,9 @@ export const initialActivityLogs: ActivityLog[] = [
   {
     id: 'l2',
     clubId: 'c1',
-    title: '디그 및 속공 연계 모의 청백전 배구 전술 훈련',
+    title: '',
     date: '2026-06-02',
-    description: '상대 강서브 리시브 후 2단 연결, 중앙 오픈 공격 루틴을 긴밀하게 연습했습니다. 최서연MB와 박지민O의 콤비네이션 연출이 빛났던 전술 매칭 일지입니다.',
+    description: '수연, 공격 연습, 서브캐치',
     participants: ['김태린', '박지민', '최서연', '한소희'],
     writer: '남윤호',
     imageTheme: 'emerald',

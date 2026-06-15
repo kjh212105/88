@@ -123,8 +123,22 @@ export default function App() {
         const filtered = parsed.filter(l => l.clubId === 'c1');
         if (filtered.length > 0) {
           return filtered.map(log => {
-            if (log.id === 'l1') return { ...log, writer: '김태린' };
-            if (log.id === 'l2') return { ...log, writer: '남윤호' };
+            if (log.id === 'l1') {
+              return { 
+                ...log, 
+                writer: '김태린', 
+                title: '',
+                description: '여자부 6인제 포지션 훈련 및 전교대 준비' 
+              };
+            }
+            if (log.id === 'l2') {
+              return { 
+                ...log, 
+                writer: '남윤호', 
+                title: '',
+                description: '수연, 공격 연습, 서브캐치' 
+              };
+            }
             return log;
           });
         }
