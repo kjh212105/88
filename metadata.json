@@ -1,0 +1,6 @@
+{
+  "name": "노쇼",
+  "description": "동아리 일정, 공지사항, 부원 출석 및 활동 기록을 한자리에서 관리할 수 있는 스마트 동아리 매니저 서비스입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
