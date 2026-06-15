@@ -78,9 +78,13 @@ export default function DashboardHeader({
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             
             {/* Dynamic themed logo */}
-            <div
+            <a
+              href="https://namu.wiki/w/%EC%9C%A0%EB%B2%A4%ED%84%B0%EC%8A%A4%20FC%20%EC%BD%94%EB%A6%AC%EC%95%84%20%ED%99%85%EB%8C%80%20%EB%85%BC%EB%9E%80"
+              target="_blank"
+              rel="noopener noreferrer"
               id="header-logo-icon"
-              className="relative w-12 h-12 rounded-2xl overflow-hidden shadow-lg border border-slate-150 shrink-0"
+              title="유벤투스 FC 코리아 홀대 논란 (노쇼 사태) 나무위키 이동"
+              className="relative w-12 h-12 rounded-2xl overflow-hidden shadow-lg border border-slate-150 shrink-0 hover:scale-105 active:scale-95 transition-all duration-200 block"
             >
               <img
                 src={ronaldoAvatar}
@@ -88,7 +92,7 @@ export default function DashboardHeader({
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
-            </div>
+            </a>
 
             <div className="space-y-1.5 flex-1">
               <div className="flex flex-wrap items-center gap-2">
